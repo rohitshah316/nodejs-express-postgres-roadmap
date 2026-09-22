@@ -1,0 +1,5 @@
+GET    /todos       → Get all todos
+GET    /todos/1     → Get todo #1
+POST   /todos       → Create a todo
+PUT    /todos/1     → Update todo #1
+DELETE /todos/1     → Delete todo #1
