@@ -1,0 +1,9 @@
+
+
+for uploading files, browsers and API cliesnts commonly use:
+Content-Type: multipart/form-data
+
+why do we need multer?
+express doesnt automatically give you convenient access to uploaded files.
+
+multer sits between the incoming requrest and your route
