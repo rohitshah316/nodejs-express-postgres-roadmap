@@ -27,3 +27,26 @@ app.get("/", async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
+// Create project + initialize Node.js
+
+// Install Express, pg, and development dependencies
+
+// Create the Express server structure
+
+// Set up PostgreSQL and create the database
+
+// Connect Node.js to PostgreSQL with pg
+
+// Create the todos table
+
+// Build GET /todos
+
+// Build GET /todos/:id
+
+// Build POST /todos
+
+// Build PUT/PATCH and DELETE
+
+// Add proper error handling and validation
+
+// Test the complete API and compare it with Project 8
