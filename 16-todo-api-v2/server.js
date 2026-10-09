@@ -40,27 +40,27 @@ res.json(result.rows)
   }
 })
 
-app.get("/todos/:id",async (req,res)=>{
-  try{
-    const {id}=req.params;
+// app.get("/todos/:id",async (req,res)=>{
+//   try{
+//     const {id}=req.params;
 
-    const result=await pool.query("SELECT * FROM todos WHERE id=$1",[id]);
+//     const result=await pool.query("SELECT * FROM todos WHERE id=$1",[id]);
 
-    if(result.rows.length===0){
-      return res.status(404).json({
-        error:"Todo not found"
-      })
-    }
+//     if(result.rows.length===0){
+//       return res.status(404).json({
+//         error:"Todo not found"
+//       })
+//     }
 
-    res.json(result.rows[0])
-  }catch(err){
-    console.error(err);
+//     res.json(result.rows[0])
+//   }catch(err){
+//     console.error(err);
 
-    res.status(500).json({
-      error:"Failed to fetch todo."
-    })
-  }
-})
+//     res.status(500).json({
+//       error:"Failed to fetch todo."
+//     })
+//   }
+// })
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
